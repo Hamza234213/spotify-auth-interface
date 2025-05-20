@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Spotify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+    <!-- Background -->
+    <div class="background-header"></div>
+
+    <main class="auth-page">
+
+        <!-- Header com logo e título -->
+        <header class="auth-header">
+            <img class="spotify-logo" src="img/spotify-icon.svg" alt="Logotipo do Spotify">
+            <h1>Entrar no Spotify</h1>
+        </header>
+
+        <!-- Botões de login social -->
+        <section class="social-login container">
+            <button class="btn btn-social">
+                <img src="img/google-icon.svg" alt="Botão de login com Google" class="social-icon">
+                <span>Continuar com o Google</span>
+            </button>
+            <button class="btn btn-social">
+                <img src="img/facebook-icon.svg" alt="Botão de login com Facebook" class="social-icon">
+                <span>Continuar com o Facebook</span>
+            </button>
+            <button class="btn btn-social">
+                <img src="img/apple-icon.svg" alt="Botão de login com Apple" class="social-icon">
+                <span>Continuar com a Apple</span>
+            </button>
+            <button class="btn btn-social">
+                <span>Continuar com um número de telefone</span>
+            </button>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Formulário de login -->
+        <form class="login-form container">
+            <label class="login-label" for="email">E-mail ou nome de usuário</label>
+            <input type="text" id="email" class="login-input" placeholder="E-mail ou nome de usuário">
+            <button type="submit" class="btn btn-continue">Continuar</button>
+        </form>
+
+        <!-- Link para cadastro -->
+        <p class="auth-footer">Não tem uma conta? <a class="auth-footer link" href="#">Inscrever-se no Spotify</a></p>
+    </main>
+
+    <!-- Footer com termos legais -->
+    <footer>
+        <p class="footer-text">
+            Este site é protegido pelo reCAPTCHA e está sujeito&nbsp;à&nbsp;<a href="#" class="link">Política de Privacidade</a>&nbsp;e&nbsp;aos&nbsp;<a href="#" class="link">Termos de Serviço</a>&nbsp;do Google.
+        </p>
+    </footer>
+</body>
+</html>
